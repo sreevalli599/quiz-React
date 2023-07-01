@@ -7,22 +7,38 @@ const[score,setScore]=useState(0);
 const[over,setOver]=useState(false);
 const questions=[
     {
-        questionText:"what  is capital of India",
+        questionText:"Number of primitive data types in Java are?",
         answerOptions:[
-            {answerText:'Delhi',isCorrect:true},
-            {answerText:'karachi',isCorrect:false},
-            {answerText:'Mumbai',isCorrect:false},
-            {answerText:'Bangalore',isCorrect:false},
+            {answerText:'6',isCorrect:false},
+            {answerText:'7',isCorrect:false},
+            {answerText:'8',isCorrect:true},
+            {answerText:'9',isCorrect:false},
         ]
     },
     {
-      questionText:"what  is capital of mumbai",
+      questionText:"When an array is passed to a method, what does the method receive",
     answerOptions:[
-        {answerText:'Delhi',isCorrect:false},
-        {answerText:'karachi',isCorrect:true},
-        {answerText:'Mumbai',isCorrect:false},
-        {answerText:'Bangalore',isCorrect:false},
+        {answerText:'The Refernce of the array',isCorrect:true},
+        {answerText:'A copy of the array',isCorrect:false},
+        {answerText:'Length of the array',isCorrect:false},
+        {answerText:'copy of the first element',isCorrect:false},
     ]
+},  {
+    questionText:"Arrays in java are",
+  answerOptions:[
+      {answerText:'Object References',isCorrect:false},
+      {answerText:'objects',isCorrect:true},
+      {answerText:'primitive data type',isCorrect:false},
+      {answerText:'None',isCorrect:false},
+  ]
+}, {
+    questionText:"When is the object created with new keyword?",
+  answerOptions:[
+      {answerText:'At RunTime',isCorrect:true},
+      {answerText:'At CompileTime',isCorrect:false},
+      {answerText:'Depends on the code',isCorrect:false},
+      {answerText:'None',isCorrect:false},
+  ]
 },
 ]
 const prevquestionHandler=()=>{
